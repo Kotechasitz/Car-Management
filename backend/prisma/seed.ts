@@ -99,7 +99,9 @@ try {
   await db.$transaction(
     seedCars.map((car) =>
       db.car.upsert({
-        where: { licensePlate_province: { licensePlate: car.licensePlate, province: car.province } },
+        where: {
+          licensePlate_province: { licensePlate: car.licensePlate, province: car.province },
+        },
         update: car,
         create: car,
       }),
