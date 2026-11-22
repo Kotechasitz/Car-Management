@@ -1,4 +1,4 @@
-# HAUPCAR Car Registry
+# Car Registry
 
 เว็บสำหรับเพิ่ม ดู แก้ไข และลบข้อมูลรถของบริษัท
 
@@ -10,6 +10,20 @@ Add, view, edit and delete company cars. React and Ant Design on the frontend, a
 - Add a car, edit it, or delete it after confirmation
 - License plate is unique per province, enforced by the database
 - Thai user interface with field-level error messages
+
+## Screenshots
+
+Car list with search and status filter
+
+![Car list](docs/screenshots/car-list.png)
+
+Edit form
+
+![Edit form](docs/screenshots/car-form.png)
+
+Delete confirmation
+
+![Delete confirmation](docs/screenshots/car-delete.png)
 
 ## Tech stack
 
