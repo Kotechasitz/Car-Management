@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Car {
+  id           Int      @id @default(autoincrement())
+  licensePlate String
+  province     String
+  brand        String
+  model        String
+  year         Int?
+  color        String?
+  status       String   @default("AVAILABLE")
+  mileage      Int?
+  note         String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([licensePlate, province])
+}
